@@ -5,7 +5,7 @@
     &nbsp;&nbsp;&nbsp;<em class="fa fa-folder-open"></em>&nbsp;
     {{ range .Params.categories }}
       <a
-        href="{{ $.Site.BaseURL }}categories/{{ . | urlize }}{{ if $.Site.Params.uglyurls }}.html{{ else }}/{{ end }}"
+        href="{{ "" | absLangURL }}categories/{{ . | urlize }}{{ if $.Site.Params.uglyurls }}.html{{ else }}/{{ end }}"
         >{{ . }}</a
       >&nbsp;
     {{ end }}

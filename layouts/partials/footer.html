@@ -3,9 +3,10 @@
 
   {{ if .IsTranslated }}
     <p>
+    Read in other languages: 
       {{ range .Translations }}
-        <a href="{{ .Permalink }}" name="{{ .Language.LanguageName }}"
-          >{{ .Language.LanguageName }}</a
+        <a href="{{ .Permalink }}" name="{{ .Lang }}"
+          >{{ .Lang }}</a
         >
       {{ end }}
     </p>
