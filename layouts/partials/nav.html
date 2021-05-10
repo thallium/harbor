@@ -1,9 +1,8 @@
 <nav class="navbar">
   <div class="nav">
     <p class="nav-logo">
-        |
         {{ range $.Site.Home.AllTranslations }}
-        <a href="{{ .Permalink }}">{{ .Lang }}</a>|
+        <a href="{{ .Permalink }}"><u>{{ .Lang }}</u></a>
         {{ end }}
     </p>
       
