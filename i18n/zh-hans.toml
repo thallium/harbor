@@ -10,3 +10,19 @@ other = "搜索..."
 other = "Powered By"
 [theme]
 other = "主题"
+[blog-posts]
+other = "篇博文"
+[lang]
+other = "语言："
+[Home]
+other = "主页"
+[About]
+other = "关于"
+[Tags]
+other = "标签"
+[Categories]
+other = "分类"
+[Archives]
+other = "存档"
+[Search]
+other = "搜索"

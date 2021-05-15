@@ -6,13 +6,16 @@
   <body>
     {{ partial "header.html" . }}
     <div class="container" id="main">
+      <div style="text-align: center;">
+          {{ len (where .Site.RegularPages ".Section" "post") }}{{i18n "blog-posts"}}
+      </div>
       <article role="article" id="blog-archives">
         <table class="archives">
           <tbody>
             {{ range (where (where .Site.Pages ".Section" "post") "Kind" "page") }}
               <tr>
                 <td>
-                  {{ .Date | dateFormat "2006" }}&nbsp;{{ .Date | dateFormat "Jan" }}&nbsp;{{ .Date | dateFormat "2" }}
+                  {{ .Date | dateFormat "2006" }}-{{ .Date | dateFormat "01" }}-{{ .Date | dateFormat "02" }}
                 </td>
                 <td>
                   <p>

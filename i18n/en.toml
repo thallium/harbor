@@ -10,3 +10,19 @@ other = "Search..."
 other = "Powered By"
 [theme]
 other = "Theme"
+[blog-posts]
+other = " blog posts"
+[lang]
+other = "Lang:"
+[Home]
+other = "Home"
+[About]
+other = "About"
+[Tags]
+other = "Tags"
+[Categories]
+other = "Categories"
+[Archives]
+other = "Archives"
+[Search]
+other = "Search"
