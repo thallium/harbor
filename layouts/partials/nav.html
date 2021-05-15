@@ -2,9 +2,15 @@
   <div class="nav">
     <p class="nav-logo">
     {{i18n "lang"}}
+    {{ if .IsTranslated }}
         {{ range .Translations }}
         <a href="{{ .Permalink }}" title="{{ .Language.LanguageName }}"><u>{{ .Lang }}</u></a>
         {{ end }}
+    {{ else }}
+        {{ range .Site.Home.Translations }}
+        <a href="{{ .Permalink }}" title="{{ .Language.LanguageName }}({{ i18n "Home" }})"><u>{{ .Lang }}</u></a>
+        {{ end }}
+    {{ end }}
     </p>
       
 
