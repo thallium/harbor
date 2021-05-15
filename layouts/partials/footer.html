@@ -5,9 +5,7 @@
     <p>
     {{i18n "lang"}}
       {{ range .Translations }}
-        <a href="{{ .Permalink }}" name="{{ .Lang }}"
-          >{{ .Lang }}</a
-        >
+        <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
       {{ end }}
     </p>
   {{ end }}

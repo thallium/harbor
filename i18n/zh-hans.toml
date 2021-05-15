@@ -13,7 +13,7 @@ other = "主题"
 [blog-posts]
 other = "篇博文"
 [lang]
-other = "语言："
+other = "语言:"
 [Home]
 other = "主页"
 [About]
@@ -26,3 +26,7 @@ other = "分类"
 other = "存档"
 [Search]
 other = "搜索"
+[translated]
+other = "已翻译"
+[no-translation]
+other = "无翻译"

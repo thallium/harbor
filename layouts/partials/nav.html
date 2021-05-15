@@ -1,14 +1,14 @@
 <nav class="navbar">
   <div class="nav">
-    <p class="nav-logo">
+    <p class="lang">
     {{i18n "lang"}}
     {{ if .IsTranslated }}
         {{ range .Translations }}
-        <a href="{{ .Permalink }}" title="{{ .Language.LanguageName }}"><u>{{ .Lang }}</u></a>
+        <a href="{{ .Permalink }}" title="{{ i18n "translated" }}">{{ .Language.LanguageName }}</a>
         {{ end }}
     {{ else }}
         {{ range .Site.Home.Translations }}
-        <a href="{{ .Permalink }}" title="{{ .Language.LanguageName }}({{ i18n "Home" }})"><u>{{ .Lang }}</u></a>
+        <a href="{{ .Permalink }}" title="{{ i18n "no-translation" }}">{{ .Language.LanguageName }}</a>
         {{ end }}
     {{ end }}
     </p>
