@@ -1,7 +1,7 @@
 <nav class="navbar">
   <div class="nav">
     <p class="lang">
-    {{i18n "lang"}}
+    <i class="fas fa-globe"></i>
     {{ if .IsTranslated }}
         {{ range .Translations }}
         <a href="{{ .Permalink }}" title="{{ i18n "translated" }}">{{ .Language.LanguageName }}</a>
