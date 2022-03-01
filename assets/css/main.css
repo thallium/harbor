@@ -116,9 +116,15 @@ h1,h2,h3,h4,h5,h6 {
   color: #333333;
 }
 
+<<<<<<< HEAD:static/css/main.css
 /* .container img { */
 /*   width: 100%;   */
 /* }                */
+=======
+.container img {
+  max-width: 100%;
+}
+>>>>>>> ec2a226f596fa5b6f12c878baecfbb265e2b4c18:assets/css/main.css
 
 #blog-archives {
   margin: 20px auto;

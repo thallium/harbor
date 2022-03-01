@@ -3,13 +3,11 @@
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=matsuyoshi30_harbor&metric=alert_status)](https://sonarcloud.io/dashboard?id=matsuyoshi30_harbor)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmatsuyoshi30%2Fharbor.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmatsuyoshi30%2Fharbor?ref=badge_shield)
 
-Simple and minimal personal blog theme for [Hugo](https://gohugo.io/).
+Simple and minimal personal blog theme for [Hugo](https://gohugo.io/). ([DEMO](https://matsuyoshi30.net/harbor/))
 
 ![screenshot](https://user-images.githubusercontent.com/16238709/77252732-3698c880-6c99-11ea-9def-15a5f9b918bc.png)
 
 ![screenshot-dark](https://user-images.githubusercontent.com/16238709/77252745-529c6a00-6c99-11ea-95f6-2df83dfff35e.png)
-
-[Here](https://themes.gohugo.io/theme/harbor/) is the demo link.
 
 ## Features
 
@@ -124,14 +122,13 @@ If you don't change them, your favicon and icon are my face :)
 
 ### Search entire blog posts
 
-You should make `search.md` in the `page` directory.
+You should make `search.md` in the `content` directory.
 
 ```
 ---
 title: "Search"
+layout: "search"
 ---
-
-{{<search>}}
 ```
 
 ### TOC
@@ -224,14 +221,10 @@ If you touch CSS or JavaScript file, you need to build to add your changes follo
     $ npm install
     ```
 
-3. After fixing files in `static` dir, run `build` command to generate `bundle.js`
+3. After fixing files, you can format like below. (Auto format before commit using husky)
 
     ```
-    $ # for development version
-    $ npm run build-dev
-
-    $ # for production version
-    $ npm run build-prod
+    $ npm run format
     ```
 
 ## LICENSE
