@@ -8,4 +8,5 @@
   />
 </div>
 <div id="searchResults" class="searchResults"></div>
-<script src="{{ "/js/search.js" | absURL }}" type="module">set_collection_name({{ .Get 0 }})</script>
+<script src="{{ "/js/search.js" | absURL }}" type="module"></script>
+<script defer>collection_name={{ .Get 0 }}</script>
