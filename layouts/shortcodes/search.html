@@ -1,3 +1,4 @@
+<script>var collection_name = {{ .Get 0 }}</script>
 <div class="searchBoxContainer">
   <input
     type="text"
@@ -7,4 +8,4 @@
   />
 </div>
 <div id="searchResults" class="searchResults"></div>
-<script src="{{ "" | absLangURL }}js/search.bundle.js"></script>
+<script src="{{ "/js/search.js" | absURL }}" type="module">set_collection_name({{ .Get 0 }})</script>
